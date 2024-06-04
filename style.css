@@ -1,0 +1,337 @@
+body {
+    background-color: #3c3c3c;
+}
+
+.quadrado {
+    background-color: #12151E;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width: 250px;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    margin-top: 5px;
+}
+
+.rodape{
+    width: 110%;
+    height: 50px;
+    position: fixed;
+    top: 95%;
+    background-color: #12151E;
+}
+.direitos{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    margin-top: 15px;
+}
+
+.titulo {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    font-weight: 600;
+}
+
+.complemento {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+}
+
+.image1, .image2, .image3 {
+    width: 80px;
+    height: auto;
+    position: fixed;
+    transition: 0.5s;
+    margin-top: 5px;''
+}
+
+.image1 {
+    left: 6%;
+}
+
+.image2 {
+    left: 3%;
+}
+
+.image3 {
+    left: 0%;
+
+}
+
+.image1:hover, .image2:hover, .image3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container {
+    margin-top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    max-width: 800px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+.project:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+    background-color: #9c9c9c;
+}
+.acessar{
+    margin-top: 20px;
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #12151E;
+    color: #03FA6E;
+    border-radius: 10px;
+    border: solid 2px #03FA6E;
+    transition: 0.5s;
+}
+
+.acessar:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+    color: #fff;
+}
+.textp1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.h2, .h1, .p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+}
+
+.h2 {
+    margin-top: 15px;
+}
+
+.h1 {
+    margin-top: -180px;
+}
+
+.p {
+    font-size: 17px;
+    margin-top: 70px;
+}
+
+.projeto {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    margin-top: 120px;
+    color: #fff;
+    z-index: 999;
+}
+
+.play {
+    width: 165px;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: fixed;
+    transition: 0.5s;
+}
+
+.play:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.icone {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 180px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 35px;
+    }
+
+    .complemento {
+        font-size: 18px;
+    }
+
+    .image1, .image2, .image3 {
+        width: 60px;
+    }
+
+    .project {
+        width: 90%;
+        height: auto;
+    }
+
+    .play {
+        width: 120px;
+    }
+
+    .icone {
+        width: 150px;
+    }
+
+    .container {
+        position: relative;
+        margin-top: 290px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        margin-top: 12px;
+        font-size: 25px;
+        margin-left: -90px;
+    }
+    .quadrado{
+        width: 100%;
+        height: 70px;
+    }
+    .complemento {
+        margin-top: 40px;
+        font-size: 12px;
+        margin-left: -90px;
+    }
+    .logo{
+        width: 150px;
+        height: auto;
+        z-index: 9999;
+        margin-top: 10px;
+        left: 50%;
+    }
+
+    .image1, .image2, .image3 {
+        margin-top: 10px;
+        top: 91%;
+        z-index: 9999;
+    }
+    .image1{
+        left: 78%;
+        width: 40px;
+    }
+    .image2{
+        left: 70%;
+        width: 40px;
+    }
+    .image3{
+       left: 62%; 
+       width: 40px;
+    }
+
+    .project {
+        margin-top: 10px;
+        width: 70%;
+        height: 100px;
+        transition: 0.5s;
+    }
+    .project:hover{
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
+    .play {
+        width: 100px;
+        margin-top: -100px;
+    }
+
+    .icone {
+        width: 100px;
+        margin-top: 1px;
+        margin-left: -170px;
+    }
+
+    .container {
+        margin-top: 140px;
+        flex-direction: column;
+    }
+
+    .projeto {
+        position: fixed;
+        margin-top: 95px;
+        font-size: 27px;
+    }
+    .textp1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    .acessar{
+        margin-top: 20px;
+        width: 70%;
+        height: 40px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #12151E;
+        color: #03FA6E;
+        border-radius: 10px;
+        border: solid 2px #03FA6E;
+        transition: 0.5s;
+    }
+
+    .acessar:hover{
+        transform: scale(1.03);
+        transition: 0.5s;
+        color: #fff;
+    }
+    .rodape{
+        top: 92%;
+        height: 100px;
+    }
+    .direitos{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+}
