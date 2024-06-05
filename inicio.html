@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Biscoto</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="quadrado">
+        <div class="complemento"></div>
+        <div class="image">
+            <img class="image1" src="java.png" alt="lenguages">
+            <img class="image2" src="css.png" alt="lenguages">
+            <img class="image3" src="html.png" alt="lenguages">
+        </div>
+        <img class="logo" src="Santoslogo (1).jpg" alt="logo">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a class="textos" href="#">Menu</a>
+        <a class="textos" href="#">Sobre</a>
+        <a class="textos" href="#">Comprar</a>
+        <a class="textos" href="#">Suporte</a>
+        <a class="textos" href="#">Contato</a>
+    </div>
+
+    <div class="projeto">&#8595 Meus Projetos &#8595</div>
+    <div class="container">
+        <div class="project">
+            <div class="textp1">Sobre nós</div>
+            <button class="saibamais">Saiba mais</button>
+        </div>
+        <div class="project">
+            <div class="textp1">Compre seu Projeto</div>
+            <button class="comprar">Comprar</button>
+        </div>
+        <div class="project">
+            <div class="textp1">Se houver dúvidas</div>
+            <button class="aqui">Clique aqui</button>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="project1">
+            <div class="textp1">Loja de Tênis</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+        <div class="project2">
+            <div class="textp1">Loja de Camisas</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+        <div class="project3">
+            <div class="textp1">Loja de Celulares</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="project1">
+            <div class="textp1">Editor/Criador de pdf</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+        <div class="project2">
+            <div class="textp1">Enviar email auto</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+        <div class="project3">
+            <div class="textp1">Cadastro de vendas</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="project1">
+            <div class="textp1">Jogo da Velha</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+        <div class="project2">
+            <div class="textp1">Snake.io</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+        <div class="project3">
+            <div class="textp1">Pac men</div>
+            <button class="acessar">Ver Projeto</button>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <div class="direitos">arthursantos@scripts.com</div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            var width = window.innerWidth <= 768 ? '150px' : '200px';
+            if (sidebar.style.width === width) {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = width;
+            }
+        }
+    </script>
+</body>
+</html>

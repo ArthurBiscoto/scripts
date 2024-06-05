@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Biscoto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quadrado">
+        <div class="complemento"></div>
+        <div class="image">
+            <img class="image1" src="java.png" alt="lenguages">
+            <img class="image2" src="css.png" alt="lenguages">
+            <img class="image3" src="html.png" alt="lenguages">
+        </div>
+        <img class="logo" src="Santoslogo (1).jpg" alt="logo">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a class="textos" href="#">Home</a>
+        <a class="textos" href="projects.html">Projetos</a>
+        <a class="textos" href="#">Comprar</a>
+        <a class="textos" href="#">Sobre</a>
+        <a class="textos" href="#">Contato</a>
+    </div>
+
+    <div class="projeto">Meus Projetos</div>
+    <div class="container">
+        <div class="project">
+            <div class="textp1">Site De Vendas 1</div>
+            <button class="acessar">Acessar Projeto</button>
+        </div>
+        <div class="project">
+            <div class="textp1">Site De Vendas 2</div>
+            <button class="acessar">Acessar Projeto</button>
+        </div>
+        <div class="project">
+            <div class="textp1">Site De Vendas 3</div>
+            <button class="acessar">Acessar Projeto</button>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <div class="direitos">arthursantos@scripts.com</div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            var width = window.innerWidth <= 768 ? '150px' : '200px';
+            if (sidebar.style.width === width) {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = width;
+            }
+        }
+    </script>
+</body>
+</html>
